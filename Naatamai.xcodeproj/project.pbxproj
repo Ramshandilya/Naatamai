@@ -38,6 +38,8 @@
 		0A6D6F6618EF4234004975FD /* YMLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6518EF4234004975FD /* YMLDefines.m */; };
 		0A6D6F6B18EF44D1004975FD /* mediaCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */; };
 		0A6D6F6C18EF44D1004975FD /* mediaCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */; };
+		665F93B818EF503A00B47422 /* YMLrepsSetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F93B718EF503A00B47422 /* YMLrepsSetsView.m */; };
+		665F93BA18EF506600B47422 /* YMLrepsSetsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665F93B918EF506600B47422 /* YMLrepsSetsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,9 @@
 		0A6D6F6818EF44D1004975FD /* mediaCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mediaCustomCell.h; sourceTree = "<group>"; };
 		0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mediaCustomCell.m; sourceTree = "<group>"; };
 		0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mediaCustomCell.xib; sourceTree = "<group>"; };
+		665F93B618EF503A00B47422 /* YMLrepsSetsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YMLrepsSetsView.h; path = ../Controllers/YMLrepsSetsView.h; sourceTree = "<group>"; };
+		665F93B718EF503A00B47422 /* YMLrepsSetsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YMLrepsSetsView.m; path = ../Controllers/YMLrepsSetsView.m; sourceTree = "<group>"; };
+		665F93B918EF506600B47422 /* YMLrepsSetsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLrepsSetsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +253,9 @@
 		0A6D6F6718EF44D1004975FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				665F93B618EF503A00B47422 /* YMLrepsSetsView.h */,
+				665F93B718EF503A00B47422 /* YMLrepsSetsView.m */,
+				665F93B918EF506600B47422 /* YMLrepsSetsView.xib */,
 				0A6D6F6818EF44D1004975FD /* mediaCustomCell.h */,
 				0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */,
 				0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */,
@@ -334,6 +342,7 @@
 				0A6D6F4518EF2EF0004975FD /* YMLCommentsViewController.xib in Resources */,
 				0A6D6F4918EF2EF0004975FD /* YMLRegisterViewController.xib in Resources */,
 				0A6D6F4718EF2EF0004975FD /* YMLEquipmentDetailViewController.xib in Resources */,
+				665F93BA18EF506600B47422 /* YMLrepsSetsView.xib in Resources */,
 				0A6D6EF718EF2392004975FD /* InfoPlist.strings in Resources */,
 				0A6D6F4B18EF2EF0004975FD /* YMLWelcomeViewController.xib in Resources */,
 				0A6D6EFF18EF2392004975FD /* Images.xcassets in Resources */,
@@ -367,6 +376,7 @@
 				0A6D6F4A18EF2EF0004975FD /* YMLWelcomeViewController.m in Sources */,
 				0A6D6F6618EF4234004975FD /* YMLDefines.m in Sources */,
 				0A6D6F4418EF2EF0004975FD /* YMLCommentsViewController.m in Sources */,
+				665F93B818EF503A00B47422 /* YMLrepsSetsView.m in Sources */,
 				0A6D6F4C18EF2EF0004975FD /* YMLWorkOutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
