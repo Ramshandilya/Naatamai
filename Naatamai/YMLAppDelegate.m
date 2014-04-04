@@ -19,6 +19,7 @@
     YMLWelcomeViewController *welcomeViewController = [[YMLWelcomeViewController alloc] initWithNibName:@"YMLWelcomeViewController" bundle:nil];
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:welcomeViewController];
     
+    self.window.rootViewController = navController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

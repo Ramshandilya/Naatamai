@@ -34,6 +34,8 @@
 		0A6D6F5318EF2F28004975FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6F5218EF2F28004975FD /* CoreLocation.framework */; };
 		0A6D6F5518EF2F32004975FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6F5418EF2F32004975FD /* QuartzCore.framework */; };
 		0A6D6F5C18EF2FE6004975FD /* YMLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F5B18EF2FE6004975FD /* YMLDataManager.m */; };
+		0A6D6F5F18EF33D2004975FD /* YMLEquipmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F5E18EF33D2004975FD /* YMLEquipmentData.m */; };
+		0A6D6F6618EF4234004975FD /* YMLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6518EF4234004975FD /* YMLDefines.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,10 @@
 		0A6D6F5418EF2F32004975FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A6D6F5A18EF2FE6004975FD /* YMLDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLDataManager.h; sourceTree = "<group>"; };
 		0A6D6F5B18EF2FE6004975FD /* YMLDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLDataManager.m; sourceTree = "<group>"; };
+		0A6D6F5D18EF33D2004975FD /* YMLEquipmentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLEquipmentData.h; sourceTree = "<group>"; };
+		0A6D6F5E18EF33D2004975FD /* YMLEquipmentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLEquipmentData.m; sourceTree = "<group>"; };
+		0A6D6F6418EF4234004975FD /* YMLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLDefines.h; sourceTree = "<group>"; };
+		0A6D6F6518EF4234004975FD /* YMLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLDefines.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,7 @@
 		0A6D6EF218EF2392004975FD /* Naatamai */ = {
 			isa = PBXGroup;
 			children = (
+				0A6D6F6318EF4234004975FD /* Helpers */,
 				0A6D6F5918EF2FE6004975FD /* Model */,
 				0A6D6F3418EF2EF0004975FD /* Controllers */,
 				0A6D6EFB18EF2392004975FD /* YMLAppDelegate.h */,
@@ -217,8 +224,19 @@
 			children = (
 				0A6D6F5A18EF2FE6004975FD /* YMLDataManager.h */,
 				0A6D6F5B18EF2FE6004975FD /* YMLDataManager.m */,
+				0A6D6F5D18EF33D2004975FD /* YMLEquipmentData.h */,
+				0A6D6F5E18EF33D2004975FD /* YMLEquipmentData.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0A6D6F6318EF4234004975FD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D6F6418EF4234004975FD /* YMLDefines.h */,
+				0A6D6F6518EF4234004975FD /* YMLDefines.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,11 +341,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A6D6F4818EF2EF0004975FD /* YMLRegisterViewController.m in Sources */,
+				0A6D6F5F18EF33D2004975FD /* YMLEquipmentData.m in Sources */,
 				0A6D6EF918EF2392004975FD /* main.m in Sources */,
 				0A6D6F5C18EF2FE6004975FD /* YMLDataManager.m in Sources */,
 				0A6D6F4618EF2EF0004975FD /* YMLEquipmentDetailViewController.m in Sources */,
 				0A6D6EFD18EF2392004975FD /* YMLAppDelegate.m in Sources */,
 				0A6D6F4A18EF2EF0004975FD /* YMLWelcomeViewController.m in Sources */,
+				0A6D6F6618EF4234004975FD /* YMLDefines.m in Sources */,
 				0A6D6F4418EF2EF0004975FD /* YMLCommentsViewController.m in Sources */,
 				0A6D6F4C18EF2EF0004975FD /* YMLWorkOutViewController.m in Sources */,
 			);
@@ -450,6 +470,7 @@
 				GCC_PREFIX_HEADER = "Naatamai/Naatamai-Prefix.pch";
 				INFOPLIST_FILE = "Naatamai/Naatamai-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0F4F9A97-40A1-442D-9B7A-B577DDFCA848";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -463,6 +484,7 @@
 				GCC_PREFIX_HEADER = "Naatamai/Naatamai-Prefix.pch";
 				INFOPLIST_FILE = "Naatamai/Naatamai-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0F4F9A97-40A1-442D-9B7A-B577DDFCA848";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
