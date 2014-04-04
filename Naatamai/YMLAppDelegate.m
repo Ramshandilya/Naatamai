@@ -7,6 +7,7 @@
 //
 
 #import "YMLAppDelegate.h"
+#import "YMLWelcomeViewController.h"
 
 @implementation YMLAppDelegate
 
@@ -14,6 +15,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    YMLWelcomeViewController *welcomeViewController = [[YMLWelcomeViewController alloc] initWithNibName:@"YMLWelcomeViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:welcomeViewController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

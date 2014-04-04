@@ -19,6 +19,21 @@
 		0A6D6F0818EF2393004975FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6EF018EF2392004975FD /* UIKit.framework */; };
 		0A6D6F1018EF2393004975FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F0E18EF2393004975FD /* InfoPlist.strings */; };
 		0A6D6F1218EF2393004975FD /* NaatamaiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F1118EF2393004975FD /* NaatamaiTests.m */; };
+		0A6D6F4418EF2EF0004975FD /* YMLCommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F3618EF2EF0004975FD /* YMLCommentsViewController.m */; };
+		0A6D6F4518EF2EF0004975FD /* YMLCommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F3718EF2EF0004975FD /* YMLCommentsViewController.xib */; };
+		0A6D6F4618EF2EF0004975FD /* YMLEquipmentDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F3918EF2EF0004975FD /* YMLEquipmentDetailViewController.m */; };
+		0A6D6F4718EF2EF0004975FD /* YMLEquipmentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F3A18EF2EF0004975FD /* YMLEquipmentDetailViewController.xib */; };
+		0A6D6F4818EF2EF0004975FD /* YMLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F3C18EF2EF0004975FD /* YMLRegisterViewController.m */; };
+		0A6D6F4918EF2EF0004975FD /* YMLRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F3D18EF2EF0004975FD /* YMLRegisterViewController.xib */; };
+		0A6D6F4A18EF2EF0004975FD /* YMLWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F3F18EF2EF0004975FD /* YMLWelcomeViewController.m */; };
+		0A6D6F4B18EF2EF0004975FD /* YMLWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F4018EF2EF0004975FD /* YMLWelcomeViewController.xib */; };
+		0A6D6F4C18EF2EF0004975FD /* YMLWorkOutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F4218EF2EF0004975FD /* YMLWorkOutViewController.m */; };
+		0A6D6F4D18EF2EF0004975FD /* YMLWorkOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F4318EF2EF0004975FD /* YMLWorkOutViewController.xib */; };
+		0A6D6F4F18EF2F1A004975FD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6F4E18EF2F1A004975FD /* AVFoundation.framework */; };
+		0A6D6F5118EF2F20004975FD /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6F5018EF2F20004975FD /* CoreBluetooth.framework */; };
+		0A6D6F5318EF2F28004975FD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6F5218EF2F28004975FD /* CoreLocation.framework */; };
+		0A6D6F5518EF2F32004975FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6F5418EF2F32004975FD /* QuartzCore.framework */; };
+		0A6D6F5C18EF2FE6004975FD /* YMLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F5B18EF2FE6004975FD /* YMLDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +63,27 @@
 		0A6D6F0D18EF2393004975FD /* NaatamaiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NaatamaiTests-Info.plist"; sourceTree = "<group>"; };
 		0A6D6F0F18EF2393004975FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A6D6F1118EF2393004975FD /* NaatamaiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NaatamaiTests.m; sourceTree = "<group>"; };
+		0A6D6F3518EF2EF0004975FD /* YMLCommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLCommentsViewController.h; sourceTree = "<group>"; };
+		0A6D6F3618EF2EF0004975FD /* YMLCommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLCommentsViewController.m; sourceTree = "<group>"; };
+		0A6D6F3718EF2EF0004975FD /* YMLCommentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLCommentsViewController.xib; sourceTree = "<group>"; };
+		0A6D6F3818EF2EF0004975FD /* YMLEquipmentDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLEquipmentDetailViewController.h; sourceTree = "<group>"; };
+		0A6D6F3918EF2EF0004975FD /* YMLEquipmentDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLEquipmentDetailViewController.m; sourceTree = "<group>"; };
+		0A6D6F3A18EF2EF0004975FD /* YMLEquipmentDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLEquipmentDetailViewController.xib; sourceTree = "<group>"; };
+		0A6D6F3B18EF2EF0004975FD /* YMLRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLRegisterViewController.h; sourceTree = "<group>"; };
+		0A6D6F3C18EF2EF0004975FD /* YMLRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLRegisterViewController.m; sourceTree = "<group>"; };
+		0A6D6F3D18EF2EF0004975FD /* YMLRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLRegisterViewController.xib; sourceTree = "<group>"; };
+		0A6D6F3E18EF2EF0004975FD /* YMLWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLWelcomeViewController.h; sourceTree = "<group>"; };
+		0A6D6F3F18EF2EF0004975FD /* YMLWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLWelcomeViewController.m; sourceTree = "<group>"; };
+		0A6D6F4018EF2EF0004975FD /* YMLWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLWelcomeViewController.xib; sourceTree = "<group>"; };
+		0A6D6F4118EF2EF0004975FD /* YMLWorkOutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLWorkOutViewController.h; sourceTree = "<group>"; };
+		0A6D6F4218EF2EF0004975FD /* YMLWorkOutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLWorkOutViewController.m; sourceTree = "<group>"; };
+		0A6D6F4318EF2EF0004975FD /* YMLWorkOutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLWorkOutViewController.xib; sourceTree = "<group>"; };
+		0A6D6F4E18EF2F1A004975FD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0A6D6F5018EF2F20004975FD /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0A6D6F5218EF2F28004975FD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0A6D6F5418EF2F32004975FD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0A6D6F5A18EF2FE6004975FD /* YMLDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLDataManager.h; sourceTree = "<group>"; };
+		0A6D6F5B18EF2FE6004975FD /* YMLDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +91,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6D6F5518EF2F32004975FD /* QuartzCore.framework in Frameworks */,
+				0A6D6F5318EF2F28004975FD /* CoreLocation.framework in Frameworks */,
+				0A6D6F5118EF2F20004975FD /* CoreBluetooth.framework in Frameworks */,
+				0A6D6F4F18EF2F1A004975FD /* AVFoundation.framework in Frameworks */,
 				0A6D6EEF18EF2392004975FD /* CoreGraphics.framework in Frameworks */,
 				0A6D6EF118EF2392004975FD /* UIKit.framework in Frameworks */,
 				0A6D6EED18EF2392004975FD /* Foundation.framework in Frameworks */,
@@ -96,6 +136,10 @@
 		0A6D6EEB18EF2392004975FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A6D6F5418EF2F32004975FD /* QuartzCore.framework */,
+				0A6D6F5218EF2F28004975FD /* CoreLocation.framework */,
+				0A6D6F5018EF2F20004975FD /* CoreBluetooth.framework */,
+				0A6D6F4E18EF2F1A004975FD /* AVFoundation.framework */,
 				0A6D6EEC18EF2392004975FD /* Foundation.framework */,
 				0A6D6EEE18EF2392004975FD /* CoreGraphics.framework */,
 				0A6D6EF018EF2392004975FD /* UIKit.framework */,
@@ -107,6 +151,8 @@
 		0A6D6EF218EF2392004975FD /* Naatamai */ = {
 			isa = PBXGroup;
 			children = (
+				0A6D6F5918EF2FE6004975FD /* Model */,
+				0A6D6F3418EF2EF0004975FD /* Controllers */,
 				0A6D6EFB18EF2392004975FD /* YMLAppDelegate.h */,
 				0A6D6EFC18EF2392004975FD /* YMLAppDelegate.m */,
 				0A6D6EFE18EF2392004975FD /* Images.xcassets */,
@@ -142,6 +188,37 @@
 				0A6D6F0E18EF2393004975FD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A6D6F3418EF2EF0004975FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D6F3518EF2EF0004975FD /* YMLCommentsViewController.h */,
+				0A6D6F3618EF2EF0004975FD /* YMLCommentsViewController.m */,
+				0A6D6F3718EF2EF0004975FD /* YMLCommentsViewController.xib */,
+				0A6D6F3818EF2EF0004975FD /* YMLEquipmentDetailViewController.h */,
+				0A6D6F3918EF2EF0004975FD /* YMLEquipmentDetailViewController.m */,
+				0A6D6F3A18EF2EF0004975FD /* YMLEquipmentDetailViewController.xib */,
+				0A6D6F3B18EF2EF0004975FD /* YMLRegisterViewController.h */,
+				0A6D6F3C18EF2EF0004975FD /* YMLRegisterViewController.m */,
+				0A6D6F3D18EF2EF0004975FD /* YMLRegisterViewController.xib */,
+				0A6D6F3E18EF2EF0004975FD /* YMLWelcomeViewController.h */,
+				0A6D6F3F18EF2EF0004975FD /* YMLWelcomeViewController.m */,
+				0A6D6F4018EF2EF0004975FD /* YMLWelcomeViewController.xib */,
+				0A6D6F4118EF2EF0004975FD /* YMLWorkOutViewController.h */,
+				0A6D6F4218EF2EF0004975FD /* YMLWorkOutViewController.m */,
+				0A6D6F4318EF2EF0004975FD /* YMLWorkOutViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0A6D6F5918EF2FE6004975FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D6F5A18EF2FE6004975FD /* YMLDataManager.h */,
+				0A6D6F5B18EF2FE6004975FD /* YMLDataManager.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +297,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6D6F4518EF2EF0004975FD /* YMLCommentsViewController.xib in Resources */,
+				0A6D6F4918EF2EF0004975FD /* YMLRegisterViewController.xib in Resources */,
+				0A6D6F4718EF2EF0004975FD /* YMLEquipmentDetailViewController.xib in Resources */,
 				0A6D6EF718EF2392004975FD /* InfoPlist.strings in Resources */,
+				0A6D6F4B18EF2EF0004975FD /* YMLWelcomeViewController.xib in Resources */,
 				0A6D6EFF18EF2392004975FD /* Images.xcassets in Resources */,
+				0A6D6F4D18EF2EF0004975FD /* YMLWorkOutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6D6F4818EF2EF0004975FD /* YMLRegisterViewController.m in Sources */,
 				0A6D6EF918EF2392004975FD /* main.m in Sources */,
+				0A6D6F5C18EF2FE6004975FD /* YMLDataManager.m in Sources */,
+				0A6D6F4618EF2EF0004975FD /* YMLEquipmentDetailViewController.m in Sources */,
 				0A6D6EFD18EF2392004975FD /* YMLAppDelegate.m in Sources */,
+				0A6D6F4A18EF2EF0004975FD /* YMLWelcomeViewController.m in Sources */,
+				0A6D6F4418EF2EF0004975FD /* YMLCommentsViewController.m in Sources */,
+				0A6D6F4C18EF2EF0004975FD /* YMLWorkOutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
