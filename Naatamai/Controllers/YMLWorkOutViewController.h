@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class mediaCustomCell;
+@interface YMLWorkOutViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+{
+    
+}
+@property (nonatomic,weak)IBOutlet UICollectionView *beaconDetailCollectionView;
 
-@interface YMLWorkOutViewController : UIViewController
-
+@property(nonatomic,strong)NSString *selectedbeaconID;
 @end

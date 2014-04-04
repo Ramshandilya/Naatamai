@@ -36,6 +36,8 @@
 		0A6D6F5C18EF2FE6004975FD /* YMLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F5B18EF2FE6004975FD /* YMLDataManager.m */; };
 		0A6D6F5F18EF33D2004975FD /* YMLEquipmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F5E18EF33D2004975FD /* YMLEquipmentData.m */; };
 		0A6D6F6618EF4234004975FD /* YMLDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6518EF4234004975FD /* YMLDefines.m */; };
+		0A6D6F6B18EF44D1004975FD /* mediaCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */; };
+		0A6D6F6C18EF44D1004975FD /* mediaCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,9 @@
 		0A6D6F5E18EF33D2004975FD /* YMLEquipmentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLEquipmentData.m; sourceTree = "<group>"; };
 		0A6D6F6418EF4234004975FD /* YMLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLDefines.h; sourceTree = "<group>"; };
 		0A6D6F6518EF4234004975FD /* YMLDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLDefines.m; sourceTree = "<group>"; };
+		0A6D6F6818EF44D1004975FD /* mediaCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mediaCustomCell.h; sourceTree = "<group>"; };
+		0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mediaCustomCell.m; sourceTree = "<group>"; };
+		0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mediaCustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,13 +162,14 @@
 		0A6D6EF218EF2392004975FD /* Naatamai */ = {
 			isa = PBXGroup;
 			children = (
-				0A6D6F6318EF4234004975FD /* Helpers */,
-				0A6D6F5918EF2FE6004975FD /* Model */,
 				0A6D6F3418EF2EF0004975FD /* Controllers */,
+				0A6D6F6318EF4234004975FD /* Helpers */,
+				0A6D6EFE18EF2392004975FD /* Images.xcassets */,
+				0A6D6F5918EF2FE6004975FD /* Model */,
+				0A6D6EF318EF2392004975FD /* Supporting Files */,
+				0A6D6F6718EF44D1004975FD /* Views */,
 				0A6D6EFB18EF2392004975FD /* YMLAppDelegate.h */,
 				0A6D6EFC18EF2392004975FD /* YMLAppDelegate.m */,
-				0A6D6EFE18EF2392004975FD /* Images.xcassets */,
-				0A6D6EF318EF2392004975FD /* Supporting Files */,
 			);
 			path = Naatamai;
 			sourceTree = "<group>";
@@ -237,6 +243,16 @@
 				0A6D6F6518EF4234004975FD /* YMLDefines.m */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A6D6F6718EF44D1004975FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D6F6818EF44D1004975FD /* mediaCustomCell.h */,
+				0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */,
+				0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +338,7 @@
 				0A6D6F4B18EF2EF0004975FD /* YMLWelcomeViewController.xib in Resources */,
 				0A6D6EFF18EF2392004975FD /* Images.xcassets in Resources */,
 				0A6D6F4D18EF2EF0004975FD /* YMLWorkOutViewController.xib in Resources */,
+				0A6D6F6C18EF44D1004975FD /* mediaCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +363,7 @@
 				0A6D6F5C18EF2FE6004975FD /* YMLDataManager.m in Sources */,
 				0A6D6F4618EF2EF0004975FD /* YMLEquipmentDetailViewController.m in Sources */,
 				0A6D6EFD18EF2392004975FD /* YMLAppDelegate.m in Sources */,
+				0A6D6F6B18EF44D1004975FD /* mediaCustomCell.m in Sources */,
 				0A6D6F4A18EF2EF0004975FD /* YMLWelcomeViewController.m in Sources */,
 				0A6D6F6618EF4234004975FD /* YMLDefines.m in Sources */,
 				0A6D6F4418EF2EF0004975FD /* YMLCommentsViewController.m in Sources */,
@@ -548,6 +566,7 @@
 				0A6D6F1718EF2393004975FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A6D6F1818EF2393004975FD /* Build configuration list for PBXNativeTarget "NaatamaiTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +575,7 @@
 				0A6D6F1A18EF2393004975FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
