@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "mediaCustomCell.h"
 #import "YMLEquipmentDetailViewController.h"
-
+#import "YMLDataManager.h"
 @interface YMLWorkOutViewController ()<CLLocationManagerDelegate, UIAlertViewDelegate>
 {
     NSMutableArray *ThumbImageArr,*beaconEquipName;
@@ -172,8 +172,17 @@
         
         //TODO: SEND DATA TO API
         
+        
         if (foundBeacon.proximity == CLProximityNear) {
             if (!isShowingMessage) {
+                NSDictionary *param =@{@"uuid": foundBeacon.proximityUUID,
+                                       @"major":foundBeacon.major,
+                                       @"minor":foundBeacon.minor};
+                [[YMLDataManager sharedManager] getBeaconDetails:param success:^(id responseObject) {
+                    NSLog(@"res %@",responseObject);
+                } Failure:^(NSError *err) {
+                    NSLog(@"failed");
+                }];
 //                [self sendLocalNotification];
             }
         }
