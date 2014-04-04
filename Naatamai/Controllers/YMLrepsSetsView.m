@@ -21,6 +21,11 @@
 -(void)awakeFromNib {
     [super awakeFromNib];
     
+    [self.repsCount setFont:[UIFont fontWithName:BEBAS_NEUE_BOLD size:40.f]];
+    [self.repsLabel setFont:[UIFont fontWithName:BEBAS_NEUE_BOLD size:16.f]];
+    [self.setsCount setFont:[UIFont fontWithName:BEBAS_NEUE_BOLD size:10.f]];
+    
+    
 }
 /*
 // Only override drawRect: if you perform custom drawing.

@@ -9,6 +9,7 @@
 #import "YMLWorkOutViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import "mediaCustomCell.h"
+#import "YMLEquipmentDetailViewController.h"
 
 @interface YMLWorkOutViewController ()<CLLocationManagerDelegate, UIAlertViewDelegate>
 {
@@ -37,6 +38,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self setupNavigationBar];
+    
     [self.beaconDetailCollectionView registerNib:[UINib nibWithNibName:@"mediaCustomCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"mediaCellIdentifier"];
     ThumbImageArr =[[NSMutableArray alloc]initWithObjects:@"",@"",@"",@"",@"", nil];
     beaconEquipName = [[NSMutableArray alloc]initWithObjects:@"",@"",@"",@"",@"", nil];
@@ -98,10 +102,24 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    YMLEquipmentDetailViewController *workoutViewController = [[YMLEquipmentDetailViewController alloc] initWithNibName:@"YMLEquipmentDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:workoutViewController animated:YES];
 }
 
 #pragma mark - Custom Methods
+
+-(void)setupNavigationBar{
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setFrame:CGRectMake(0, 0, 25, 25)];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setImage:[UIImage imageNamed:@"back_arrow"] forState:UIControlStateNormal];
+    
+    UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc]initWithCustomView:backButton];
+    [self.navigationItem setLeftBarButtonItem:barButtonBack];
+    
+    self.title = @"CHEST & BACK";
+}
 
 -(void)sendLocalNotification{
     
@@ -156,7 +174,7 @@
         
         if (foundBeacon.proximity == CLProximityNear) {
             if (!isShowingMessage) {
-                [self sendLocalNotification];
+//                [self sendLocalNotification];
             }
         }
         
@@ -168,6 +186,13 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     isShowingMessage = NO;
+}
+
+#pragma mark - Selectors
+
+-(void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

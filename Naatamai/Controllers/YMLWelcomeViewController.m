@@ -7,6 +7,7 @@
 //
 
 #import "YMLWelcomeViewController.h"
+#import "YMLWorkOutViewController.h"
 
 @interface YMLWelcomeViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
@@ -40,6 +41,7 @@
 //        self.edgesForExtendedLayout = UIRectEdgeNone;
 //    }
     self.navigationController.navigationBar.translucent = YES;
+    self.navigationItem.title = @"Gym Trainer";
     
     [self.welcomeLabel setFont:[UIFont fontWithName:BEBAS_NEUE_REGULAR size:20.f]];
     [self.nameLabel setFont:[UIFont fontWithName:BEBAS_NEUE_REGULAR size:40.f]];
@@ -57,6 +59,11 @@
 }
 
 - (IBAction)beginWorkout:(id)sender {
+    
+    YMLWorkOutViewController *workoutViewController = [[YMLWorkOutViewController alloc] initWithNibName:@"YMLWorkOutViewController" bundle:nil];
+    [self.navigationController pushViewController:workoutViewController animated:YES];
+    
+    
 }
 
 @end

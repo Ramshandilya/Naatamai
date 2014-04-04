@@ -8,7 +8,10 @@
 
 #import "YMLEquipmentDetailViewController.h"
 #import "YMLrepsSetsView.h"
+#import "UIView+LoadNIb.h"
+
 #define BACK_ICON [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"back_button_blue" ofType:@"png"]]
+
 @interface YMLEquipmentDetailViewController ()
 @property (nonatomic,weak) IBOutlet UIScrollView *scrollView;
 @property (nonatomic,strong) YMLrepsSetsView *SetsAndRepsView;
@@ -28,46 +31,52 @@
     }
     return self;
 }
--(void)setupNavigationBar{
-    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [backButton setTitleColor:[UIColor colorWithRed:42.0/256.0 green:176.0/256.0 blue:238.0/256.0 alpha:1] forState:UIControlStateNormal];
-    [backButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
-    [backButton setFrame:CGRectMake(0, 0, BACK_ICON.size.width + 5 + [backButton.titleLabel.text sizeWithFont:backButton.titleLabel.font].width,BACK_ICON.size.height)];
-    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchDown];
-    
-    UIImageView *backButtonimgv = [[UIImageView alloc]initWithImage:BACK_ICON];
-    [backButton addSubview:backButtonimgv];
-    
-    UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc]initWithCustomView:backButton];
-    [self.navigationItem setLeftBarButtonItem:barButtonBack];
-    
-    
-    [self.navigationItem setTitle:@"Excersize"];
-}
--(void)back
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self.excerszieNameLbl setFont:[UIFont fontWithName:BEBAS_NEUE_REGULAR size:20.f]];
+    [self.setsRepsLabel setFont:[UIFont fontWithName:BEBAS_NEUE_REGULAR size:20.f]];
+    
     for (int i =0; i<3; i++)
     {
-        self.SetsAndRepsView  =[[YMLrepsSetsView alloc]initWithFrame:CGRectMake(16+(i*100), 457, 90, 90)];
+        self.SetsAndRepsView  = [YMLrepsSetsView loadInstanceFromNibWithOwner:self];
+        [self.SetsAndRepsView setFrame:CGRectMake(16+(i*100), 400, 90, 90)];
         [self.scrollView addSubview:self.SetsAndRepsView];
         self.SetsAndRepsView.repsCount.text =@"20";
         int x = i+1;
         self.SetsAndRepsView.setsCount.text = [NSString stringWithFormat:@"SET %d",x];
     }
     
-//    self.DetailsTextview = @""
-    // Do any additional setup after loading the view from its nib.
+    [self setupNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Custom Methods
+
+-(void)setupNavigationBar{
+    
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setFrame:CGRectMake(0, 0, 25, 25)];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setImage:[UIImage imageNamed:@"back_arrow"] forState:UIControlStateNormal];
+    
+    UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc]initWithCustomView:backButton];
+    [self.navigationItem setLeftBarButtonItem:barButtonBack];
+    
+    self.title = @"EQUIPMENT DETAILS";
+}
+
+#pragma mark - Selectors
+
+-(void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

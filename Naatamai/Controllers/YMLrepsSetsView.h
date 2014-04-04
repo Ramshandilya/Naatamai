@@ -11,4 +11,5 @@
 @interface YMLrepsSetsView : UIView
 @property (nonatomic,weak) IBOutlet UILabel *repsCount,*setsCount;
 @property (nonatomic , weak) IBOutlet UIImageView *backgroundImageview;
+@property (weak, nonatomic) IBOutlet UILabel *repsLabel;
 @end

@@ -10,6 +10,7 @@
 
 @interface YMLDefines : NSObject
 
+#define AVENIR                  @"avenir"
 #define BEBAS_NEUE_BOLD         @"BebasNeueBold"
 #define BEBAS_NEUE_BOOK         @"BebasNeueBook"
 #define BEBAS_NEUE_LIGHT        @"BebasNeueLight"
