@@ -41,6 +41,9 @@
                             <state key="normal" image="play_button.png">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="playVideoTapped:" destination="-1" eventType="touchUpInside" id="aPC-cy-pS4"/>
+                            </connections>
                         </button>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INCLINED BENCH PRESS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gc1-2v-JW0">
                             <rect key="frame" x="20" y="243" width="251" height="21"/>

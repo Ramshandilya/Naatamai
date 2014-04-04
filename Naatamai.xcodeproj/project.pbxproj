@@ -35,8 +35,8 @@
 		0A6D6F5518EF2F32004975FD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6F5418EF2F32004975FD /* QuartzCore.framework */; };
 		0A6D6F5C18EF2FE6004975FD /* YMLDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F5B18EF2FE6004975FD /* YMLDataManager.m */; };
 		0A6D6F5F18EF33D2004975FD /* YMLEquipmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F5E18EF33D2004975FD /* YMLEquipmentData.m */; };
-		0A6D6F6B18EF44D1004975FD /* mediaCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */; };
-		0A6D6F6C18EF44D1004975FD /* mediaCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */; };
+		0A6D6F6B18EF44D1004975FD /* YMLWorkoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6918EF44D1004975FD /* YMLWorkoutCell.m */; };
+		0A6D6F6C18EF44D1004975FD /* YMLWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6A18EF44D1004975FD /* YMLWorkoutCell.xib */; };
 		0A6D6F7318EF4891004975FD /* Bg_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F6F18EF4891004975FD /* Bg_1@2x.png */; };
 		0A6D6F7418EF4891004975FD /* Bg_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F7018EF4891004975FD /* Bg_2@2x.png */; };
 		0A6D6F7518EF4891004975FD /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6F7118EF4891004975FD /* play_button.png */; };
@@ -66,8 +66,10 @@
 		0A6D6FA618EF61A6004975FD /* avenir.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FA518EF61A6004975FD /* avenir.ttf */; };
 		0A6D6FA918EF61AF004975FD /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FA718EF61AF004975FD /* circle.png */; };
 		0A6D6FAA18EF61AF004975FD /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FA818EF61AF004975FD /* circle@2x.png */; };
-		665F93B818EF503A00B47422 /* YMLrepsSetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 665F93B718EF503A00B47422 /* YMLrepsSetsView.m */; };
-		665F93BA18EF506600B47422 /* YMLrepsSetsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665F93B918EF506600B47422 /* YMLrepsSetsView.xib */; };
+		0A6D6FAC18EF6818004975FD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6FAB18EF6818004975FD /* MediaPlayer.framework */; };
+		0A6D6FAF18EF694E004975FD /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FAE18EF694E004975FD /* sample.mp4 */; };
+		0A6D6FB218EF6AA1004975FD /* YMLRepsSetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6FB118EF6AA1004975FD /* YMLRepsSetsView.m */; };
+		665F93BA18EF506600B47422 /* YMLRepsSetsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665F93B918EF506600B47422 /* YMLRepsSetsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,9 +123,9 @@
 		0A6D6F5D18EF33D2004975FD /* YMLEquipmentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLEquipmentData.h; sourceTree = "<group>"; };
 		0A6D6F5E18EF33D2004975FD /* YMLEquipmentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLEquipmentData.m; sourceTree = "<group>"; };
 		0A6D6F6418EF4234004975FD /* YMLDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLDefines.h; sourceTree = "<group>"; };
-		0A6D6F6818EF44D1004975FD /* mediaCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mediaCustomCell.h; sourceTree = "<group>"; };
-		0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mediaCustomCell.m; sourceTree = "<group>"; };
-		0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mediaCustomCell.xib; sourceTree = "<group>"; };
+		0A6D6F6818EF44D1004975FD /* YMLWorkoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLWorkoutCell.h; sourceTree = "<group>"; };
+		0A6D6F6918EF44D1004975FD /* YMLWorkoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLWorkoutCell.m; sourceTree = "<group>"; };
+		0A6D6F6A18EF44D1004975FD /* YMLWorkoutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLWorkoutCell.xib; sourceTree = "<group>"; };
 		0A6D6F6F18EF4891004975FD /* Bg_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bg_1@2x.png"; sourceTree = "<group>"; };
 		0A6D6F7018EF4891004975FD /* Bg_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bg_2@2x.png"; sourceTree = "<group>"; };
 		0A6D6F7118EF4891004975FD /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
@@ -154,9 +156,11 @@
 		0A6D6FA518EF61A6004975FD /* avenir.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = avenir.ttf; sourceTree = "<group>"; };
 		0A6D6FA718EF61AF004975FD /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		0A6D6FA818EF61AF004975FD /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle@2x.png"; sourceTree = "<group>"; };
-		665F93B618EF503A00B47422 /* YMLrepsSetsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YMLrepsSetsView.h; path = ../Controllers/YMLrepsSetsView.h; sourceTree = "<group>"; };
-		665F93B718EF503A00B47422 /* YMLrepsSetsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YMLrepsSetsView.m; path = ../Controllers/YMLrepsSetsView.m; sourceTree = "<group>"; };
-		665F93B918EF506600B47422 /* YMLrepsSetsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLrepsSetsView.xib; sourceTree = "<group>"; };
+		0A6D6FAB18EF6818004975FD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0A6D6FAE18EF694E004975FD /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
+		0A6D6FB018EF6AA1004975FD /* YMLRepsSetsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLRepsSetsView.h; sourceTree = "<group>"; };
+		0A6D6FB118EF6AA1004975FD /* YMLRepsSetsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLRepsSetsView.m; sourceTree = "<group>"; };
+		665F93B918EF506600B47422 /* YMLRepsSetsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLRepsSetsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6D6FAC18EF6818004975FD /* MediaPlayer.framework in Frameworks */,
 				0A6D6F5518EF2F32004975FD /* QuartzCore.framework in Frameworks */,
 				0A6D6F5318EF2F28004975FD /* CoreLocation.framework in Frameworks */,
 				0A6D6F5118EF2F20004975FD /* CoreBluetooth.framework in Frameworks */,
@@ -209,6 +214,7 @@
 		0A6D6EEB18EF2392004975FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A6D6FAB18EF6818004975FD /* MediaPlayer.framework */,
 				0A6D6F5418EF2F32004975FD /* QuartzCore.framework */,
 				0A6D6F5218EF2F28004975FD /* CoreLocation.framework */,
 				0A6D6F5018EF2F20004975FD /* CoreBluetooth.framework */,
@@ -312,12 +318,12 @@
 		0A6D6F6718EF44D1004975FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				665F93B618EF503A00B47422 /* YMLrepsSetsView.h */,
-				665F93B718EF503A00B47422 /* YMLrepsSetsView.m */,
-				665F93B918EF506600B47422 /* YMLrepsSetsView.xib */,
-				0A6D6F6818EF44D1004975FD /* mediaCustomCell.h */,
-				0A6D6F6918EF44D1004975FD /* mediaCustomCell.m */,
-				0A6D6F6A18EF44D1004975FD /* mediaCustomCell.xib */,
+				0A6D6FB018EF6AA1004975FD /* YMLRepsSetsView.h */,
+				0A6D6FB118EF6AA1004975FD /* YMLRepsSetsView.m */,
+				665F93B918EF506600B47422 /* YMLRepsSetsView.xib */,
+				0A6D6F6818EF44D1004975FD /* YMLWorkoutCell.h */,
+				0A6D6F6918EF44D1004975FD /* YMLWorkoutCell.m */,
+				0A6D6F6A18EF44D1004975FD /* YMLWorkoutCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 		0A6D6F6D18EF4891004975FD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A6D6FAD18EF694E004975FD /* Videos */,
 				0A6D6F8F18EF50E6004975FD /* Fonts */,
 				0A6D6F6E18EF4891004975FD /* Images */,
 			);
@@ -371,6 +378,14 @@
 				0A6D6F9418EF50E6004975FD /* BebasNeue Thin.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0A6D6FAD18EF694E004975FD /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				0A6D6FAE18EF694E004975FD /* sample.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,13 +475,14 @@
 				0A6D6F8818EF4A1A004975FD /* workout_2@2x.png in Resources */,
 				0A6D6F9618EF50E6004975FD /* BebasNeue Book.otf in Resources */,
 				0A6D6F4918EF2EF0004975FD /* YMLRegisterViewController.xib in Resources */,
+				0A6D6FAF18EF694E004975FD /* sample.mp4 in Resources */,
 				0A6D6F7418EF4891004975FD /* Bg_2@2x.png in Resources */,
 				0A6D6F8D18EF4A1A004975FD /* workout_5.png in Resources */,
 				0A6D6F8C18EF4A1A004975FD /* workout_4@2x.png in Resources */,
 				0A6D6F9818EF50E6004975FD /* BebasNeue Regular.otf in Resources */,
 				0A6D6F9F18EF551A004975FD /* back_arrow@2x.png in Resources */,
 				0A6D6F4718EF2EF0004975FD /* YMLEquipmentDetailViewController.xib in Resources */,
-				665F93BA18EF506600B47422 /* YMLrepsSetsView.xib in Resources */,
+				665F93BA18EF506600B47422 /* YMLRepsSetsView.xib in Resources */,
 				0A6D6EF718EF2392004975FD /* InfoPlist.strings in Resources */,
 				0A6D6FA118EF551A004975FD /* body_image@2x.png in Resources */,
 				0A6D6FA018EF551A004975FD /* body_image.png in Resources */,
@@ -481,7 +497,7 @@
 				0A6D6FAA18EF61AF004975FD /* circle@2x.png in Resources */,
 				0A6D6F8718EF4A1A004975FD /* workout_2.png in Resources */,
 				0A6D6F8918EF4A1A004975FD /* workout_3.png in Resources */,
-				0A6D6F6C18EF44D1004975FD /* mediaCustomCell.xib in Resources */,
+				0A6D6F6C18EF44D1004975FD /* YMLWorkoutCell.xib in Resources */,
 				0A6D6F8E18EF4A1A004975FD /* workout_5@2x.png in Resources */,
 				0A6D6F8518EF4A1A004975FD /* workout_1.png in Resources */,
 				0A6D6F8418EF4A1A004975FD /* begin_workout@2x.png in Resources */,
@@ -506,15 +522,15 @@
 			files = (
 				0A6D6FA418EF5C04004975FD /* UIView+LoadNIb.m in Sources */,
 				0A6D6F4818EF2EF0004975FD /* YMLRegisterViewController.m in Sources */,
+				0A6D6FB218EF6AA1004975FD /* YMLRepsSetsView.m in Sources */,
 				0A6D6F5F18EF33D2004975FD /* YMLEquipmentData.m in Sources */,
 				0A6D6EF918EF2392004975FD /* main.m in Sources */,
 				0A6D6F5C18EF2FE6004975FD /* YMLDataManager.m in Sources */,
 				0A6D6F4618EF2EF0004975FD /* YMLEquipmentDetailViewController.m in Sources */,
 				0A6D6EFD18EF2392004975FD /* YMLAppDelegate.m in Sources */,
-				0A6D6F6B18EF44D1004975FD /* mediaCustomCell.m in Sources */,
+				0A6D6F6B18EF44D1004975FD /* YMLWorkoutCell.m in Sources */,
 				0A6D6F4A18EF2EF0004975FD /* YMLWelcomeViewController.m in Sources */,
 				0A6D6F4418EF2EF0004975FD /* YMLCommentsViewController.m in Sources */,
-				665F93B818EF503A00B47422 /* YMLrepsSetsView.m in Sources */,
 				0A6D6F4C18EF2EF0004975FD /* YMLWorkOutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

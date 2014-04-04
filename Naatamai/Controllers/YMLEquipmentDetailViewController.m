@@ -7,14 +7,14 @@
 //
 
 #import "YMLEquipmentDetailViewController.h"
-#import "YMLrepsSetsView.h"
+#import "YMLRepsSetsView.h"
 #import "UIView+LoadNIb.h"
+#import <MediaPlayer/MediaPlayer.h>
 
-#define BACK_ICON [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"back_button_blue" ofType:@"png"]]
 
 @interface YMLEquipmentDetailViewController ()
 @property (nonatomic,weak) IBOutlet UIScrollView *scrollView;
-@property (nonatomic,strong) YMLrepsSetsView *SetsAndRepsView;
+@property (nonatomic,strong) YMLRepsSetsView *SetsAndRepsView;
 @property (nonatomic, weak) IBOutlet UITextView *DetailsTextview;
 @property (nonatomic, weak) IBOutlet UIImageView *videoAvatarImageView;
 @property (nonatomic,weak) IBOutlet UIButton *playBtn;
@@ -40,7 +40,7 @@
     
     for (int i =0; i<3; i++)
     {
-        self.SetsAndRepsView  = [YMLrepsSetsView loadInstanceFromNibWithOwner:self];
+        self.SetsAndRepsView  = [YMLRepsSetsView loadInstanceFromNibWithOwner:self];
         [self.SetsAndRepsView setFrame:CGRectMake(16+(i*100), 400, 90, 90)];
         [self.scrollView addSubview:self.SetsAndRepsView];
         self.SetsAndRepsView.repsCount.text =@"20";
@@ -79,4 +79,10 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)playVideoTapped:(id)sender {
+    NSURL *movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"sample" ofType:@"mp4"]];
+    MPMoviePlayerViewController *movieController = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
+    [self presentMoviePlayerViewControllerAnimated:movieController];
+    [movieController.moviePlayer play];
+}
 @end

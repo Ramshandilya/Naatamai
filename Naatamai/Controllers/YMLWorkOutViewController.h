@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class mediaCustomCell;
+@class YMLWorkoutCell;
 @interface YMLWorkOutViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
 {
     

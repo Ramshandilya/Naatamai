@@ -8,7 +8,7 @@
 
 #import "YMLWorkOutViewController.h"
 #import <CoreLocation/CoreLocation.h>
-#import "mediaCustomCell.h"
+#import "YMLWorkoutCell.h"
 #import "YMLEquipmentDetailViewController.h"
 
 @interface YMLWorkOutViewController ()<CLLocationManagerDelegate, UIAlertViewDelegate>
@@ -85,9 +85,9 @@
     return 6;
 }
 
-- (mediaCustomCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+- (YMLWorkoutCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"mediaCellIdentifier";
-    mediaCustomCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    YMLWorkoutCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
     
     if(!cell)
     {
