@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef void(^SuccessBlock)(id responseObject);
+typedef void(^FailureBlock)(NSError *err);
 
 @interface YMLDataManager : NSObject
 
 @property (nonatomic, strong) NSString *userName;
 
 + (instancetype)sharedManager;
+-(void)getBeaconDetails : (NSDictionary * )params success  :(SuccessBlock) sucess Failure :(FailureBlock )failure;
 
 @end
