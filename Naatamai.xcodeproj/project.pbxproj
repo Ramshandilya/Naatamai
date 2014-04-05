@@ -69,6 +69,8 @@
 		0A6D6FAC18EF6818004975FD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D6FAB18EF6818004975FD /* MediaPlayer.framework */; };
 		0A6D6FAF18EF694E004975FD /* sample.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FAE18EF694E004975FD /* sample.mp4 */; };
 		0A6D6FB218EF6AA1004975FD /* YMLRepsSetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6FB118EF6AA1004975FD /* YMLRepsSetsView.m */; };
+		0A6D6FB518EF7CD3004975FD /* glow_workout.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FB318EF7CD3004975FD /* glow_workout.png */; };
+		0A6D6FB618EF7CD3004975FD /* glow_workout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FB418EF7CD3004975FD /* glow_workout@2x.png */; };
 		665F93BA18EF506600B47422 /* YMLRepsSetsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665F93B918EF506600B47422 /* YMLRepsSetsView.xib */; };
 /* End PBXBuildFile section */
 
@@ -160,6 +162,8 @@
 		0A6D6FAE18EF694E004975FD /* sample.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample.mp4; sourceTree = "<group>"; };
 		0A6D6FB018EF6AA1004975FD /* YMLRepsSetsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMLRepsSetsView.h; sourceTree = "<group>"; };
 		0A6D6FB118EF6AA1004975FD /* YMLRepsSetsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLRepsSetsView.m; sourceTree = "<group>"; };
+		0A6D6FB318EF7CD3004975FD /* glow_workout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glow_workout.png; sourceTree = "<group>"; };
+		0A6D6FB418EF7CD3004975FD /* glow_workout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glow_workout@2x.png"; sourceTree = "<group>"; };
 		665F93B918EF506600B47422 /* YMLRepsSetsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLRepsSetsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -341,6 +345,8 @@
 		0A6D6F6E18EF4891004975FD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				0A6D6FB318EF7CD3004975FD /* glow_workout.png */,
+				0A6D6FB418EF7CD3004975FD /* glow_workout@2x.png */,
 				0A6D6FA718EF61AF004975FD /* circle.png */,
 				0A6D6FA818EF61AF004975FD /* circle@2x.png */,
 				0A6D6F9A18EF551A004975FD /* back_arrow.png */,
@@ -475,6 +481,7 @@
 				0A6D6F8818EF4A1A004975FD /* workout_2@2x.png in Resources */,
 				0A6D6F9618EF50E6004975FD /* BebasNeue Book.otf in Resources */,
 				0A6D6F4918EF2EF0004975FD /* YMLRegisterViewController.xib in Resources */,
+				0A6D6FB618EF7CD3004975FD /* glow_workout@2x.png in Resources */,
 				0A6D6FAF18EF694E004975FD /* sample.mp4 in Resources */,
 				0A6D6F7418EF4891004975FD /* Bg_2@2x.png in Resources */,
 				0A6D6F8D18EF4A1A004975FD /* workout_5.png in Resources */,
@@ -500,6 +507,7 @@
 				0A6D6F6C18EF44D1004975FD /* YMLWorkoutCell.xib in Resources */,
 				0A6D6F8E18EF4A1A004975FD /* workout_5@2x.png in Resources */,
 				0A6D6F8518EF4A1A004975FD /* workout_1.png in Resources */,
+				0A6D6FB518EF7CD3004975FD /* glow_workout.png in Resources */,
 				0A6D6F8418EF4A1A004975FD /* begin_workout@2x.png in Resources */,
 				0A6D6F7518EF4891004975FD /* play_button.png in Resources */,
 			);

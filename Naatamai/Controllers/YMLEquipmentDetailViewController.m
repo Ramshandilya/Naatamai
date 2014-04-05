@@ -68,8 +68,7 @@
     
     UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc]initWithCustomView:backButton];
     [self.navigationItem setLeftBarButtonItem:barButtonBack];
-    
-    self.title = @"EQUIPMENT DETAILS";
+
 }
 
 #pragma mark - Selectors

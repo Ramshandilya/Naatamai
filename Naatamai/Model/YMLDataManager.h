@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 typedef void(^SuccessBlock)(id responseObject);
 typedef void(^FailureBlock)(NSError *err);
 

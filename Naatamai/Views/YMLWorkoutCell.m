@@ -26,13 +26,16 @@
     [self.nameLabel setFont:[UIFont fontWithName:BEBAS_NEUE_REGULAR size:16.f]];
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)glow
 {
-    // Drawing code
+    [UIView animateWithDuration:0.6 animations:^{
+        self.glowImageView.alpha = 1;
+    }];
 }
-*/
+
+-(void)done
+{
+    self.checkImageView.alpha = 1;
+}
 
 @end

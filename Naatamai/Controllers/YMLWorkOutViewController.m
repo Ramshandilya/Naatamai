@@ -23,7 +23,7 @@
 
 @implementation YMLWorkOutViewController
 {
-    BOOL isShowingMessage;
+    BOOL isProcessing;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -41,9 +41,9 @@
     
     [self setupNavigationBar];
     
-    [self.beaconDetailCollectionView registerNib:[UINib nibWithNibName:@"mediaCustomCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"mediaCellIdentifier"];
-    ThumbImageArr =[[NSMutableArray alloc]initWithObjects:@"",@"",@"",@"",@"", nil];
-    beaconEquipName = [[NSMutableArray alloc]initWithObjects:@"",@"",@"",@"",@"", nil];
+    [self.beaconDetailCollectionView registerNib:[UINib nibWithNibName:@"YMLWorkoutCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"mediaCellIdentifier"];
+    ThumbImageArr =[[NSMutableArray alloc]initWithObjects:@"workout_1",@"workout_2",@"workout_3",@"workout_4",@"workout_4",@"workout_5",@"workout_3", nil];
+    beaconEquipName = [[NSMutableArray alloc]initWithObjects:@"DUMBELL LIFT",@"INCLINED PRESS",@"FRONT PULL",@"LAT PULL DOWN",@"DUMBELL LIFT",@"INCLINED PRESS", nil];
     
     //BEACON SETUP
     self.locationManager = [[CLLocationManager alloc] init];
@@ -91,11 +91,11 @@
     
     if(!cell)
     {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"mediaCustomCell" owner:self options:nil];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"YMLWorkoutCell" owner:self options:nil];
         cell = [nib objectAtIndex:0];
     }
-    [cell.ThumbImage setImage:[UIImage imageNamed:@"media_default_circle.png"]];
-    cell.nameLabel.text = @"Excersize";
+    [cell.ThumbImage setImage:[UIImage imageNamed:ThumbImageArr[indexPath.row]]];
+    cell.nameLabel.text = beaconEquipName[indexPath.row];
     
     return cell;
 }
@@ -103,6 +103,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     YMLEquipmentDetailViewController *workoutViewController = [[YMLEquipmentDetailViewController alloc] initWithNibName:@"YMLEquipmentDetailViewController" bundle:nil];
+    workoutViewController.title = [beaconEquipName[indexPath.row] uppercaseString];
     [self.navigationController pushViewController:workoutViewController animated:YES];
 }
 
@@ -121,7 +122,7 @@
     self.title = @"CHEST & BACK";
 }
 
--(void)sendLocalNotification{
+-(void)sendLocalNotification:(NSString *)info{
     
     UILocalNotification * localNotification = [[UILocalNotification alloc] init];
     localNotification.alertBody = @"HI";
@@ -131,11 +132,17 @@
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
     if ([UIApplication sharedApplication].applicationState == UIApplicationStateActive) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Gym Trainer" message:@"HI" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        alertView.delegate = self;
-        [alertView show];
-        isShowingMessage = YES;
+        if ([info isEqualToString:@"INCLINED BENCH PRESS"]) {
+            YMLWorkoutCell *cell = (YMLWorkoutCell *)[self.beaconDetailCollectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
+            [cell glow];
+        }
+        if ([info isEqualToString:@"DUMBBELL LIFT"]) {
+            YMLWorkoutCell *cell = (YMLWorkoutCell *)[self.beaconDetailCollectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+            [cell glow];
+        }
     }
+    
+    isProcessing = NO;
 }
 
 #pragma mark - CLLocationManagerDelegate methods
@@ -173,17 +180,19 @@
         //TODO: SEND DATA TO API
         
         
-        if (foundBeacon.proximity == CLProximityNear) {
-            if (!isShowingMessage) {
-                NSDictionary *param =@{@"uuid": foundBeacon.proximityUUID,
+        if (foundBeacon.proximity == CLProximityImmediate) {
+            if (!isProcessing) {
+                isProcessing = YES;
+                NSDictionary *param =@{@"uuid": foundBeacon.proximityUUID.UUIDString,
                                        @"major":foundBeacon.major,
                                        @"minor":foundBeacon.minor};
                 [[YMLDataManager sharedManager] getBeaconDetails:param success:^(id responseObject) {
                     NSLog(@"res %@",responseObject);
+                    [self sendLocalNotification:[[[responseObject objectForKey:@"data"] objectAtIndex:0] objectForKey:@"equipment_name"]];
                 } Failure:^(NSError *err) {
                     NSLog(@"failed");
                 }];
-//                [self sendLocalNotification];
+                
             }
         }
         
@@ -194,7 +203,7 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    isShowingMessage = NO;
+    isProcessing = NO;
 }
 
 #pragma mark - Selectors

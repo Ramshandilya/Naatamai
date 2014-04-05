@@ -14,5 +14,10 @@
 }
 @property(nonatomic,strong)IBOutlet UIImageView *ThumbImage;
 @property (nonatomic,weak) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *glowImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *checkImageView;
+
+- (void)glow;
+- (void)done;
 
 @end

@@ -31,6 +31,7 @@
     }
     return self;
 }
+
 -(void)getBeaconDetails : (NSDictionary * )params success  :(SuccessBlock) sucess Failure :(FailureBlock )failure
 {
     NSString *urlStr =[NSString stringWithFormat:@"http://192.168.1.29/gymapp/index.php/gym/getEquipmentInfo?uuid=%@&major=%@&minor=%@",[params objectForKey:@"uuid"],[params objectForKey:@"major"],[params objectForKey:@"minor"]];
@@ -39,8 +40,8 @@
         dispatch_async(dispatch_get_main_queue(), ^{
             
             if (data) {
-                NSDictionary *response = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-                sucess(response);
+                NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+                sucess(responseDict);
             }
             else{
                 
