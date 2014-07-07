@@ -173,15 +173,13 @@
         // Handle your found beacons here
         
         CLBeacon *foundBeacon = [beacons firstObject];
-        NSLog(@"Beacon Major - %@", foundBeacon.major);//64517
-        NSLog(@"Beacon Minor - %@", foundBeacon.minor);//8889
-        
-        
-        //TODO: SEND DATA TO API
-        
-        
+       
         if (foundBeacon.proximity == CLProximityImmediate) {
             if (!isProcessing) {
+                
+                NSLog(@"Beacon Major - %@", foundBeacon.major);
+                NSLog(@"Beacon Minor - %@", foundBeacon.minor);
+                
                 isProcessing = YES;
                 NSDictionary *param =@{@"uuid": foundBeacon.proximityUUID.UUIDString,
                                        @"major":foundBeacon.major,
@@ -191,6 +189,7 @@
                     [self sendLocalNotification:[[[responseObject objectForKey:@"data"] objectAtIndex:0] objectForKey:@"equipment_name"]];
                 } Failure:^(NSError *err) {
                     NSLog(@"failed");
+                    isProcessing = NO;
                 }];
                 
             }

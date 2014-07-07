@@ -71,6 +71,7 @@
 		0A6D6FB218EF6AA1004975FD /* YMLRepsSetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6D6FB118EF6AA1004975FD /* YMLRepsSetsView.m */; };
 		0A6D6FB518EF7CD3004975FD /* glow_workout.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FB318EF7CD3004975FD /* glow_workout.png */; };
 		0A6D6FB618EF7CD3004975FD /* glow_workout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A6D6FB418EF7CD3004975FD /* glow_workout@2x.png */; };
+		0A955C9918F3FA9900553B23 /* sample.mov in Resources */ = {isa = PBXBuildFile; fileRef = 0A955C9818F3FA9900553B23 /* sample.mov */; };
 		665F93BA18EF506600B47422 /* YMLRepsSetsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665F93B918EF506600B47422 /* YMLRepsSetsView.xib */; };
 /* End PBXBuildFile section */
 
@@ -164,6 +165,7 @@
 		0A6D6FB118EF6AA1004975FD /* YMLRepsSetsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMLRepsSetsView.m; sourceTree = "<group>"; };
 		0A6D6FB318EF7CD3004975FD /* glow_workout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glow_workout.png; sourceTree = "<group>"; };
 		0A6D6FB418EF7CD3004975FD /* glow_workout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glow_workout@2x.png"; sourceTree = "<group>"; };
+		0A955C9818F3FA9900553B23 /* sample.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample.mov; sourceTree = "<group>"; };
 		665F93B918EF506600B47422 /* YMLRepsSetsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMLRepsSetsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -389,6 +391,7 @@
 		0A6D6FAD18EF694E004975FD /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				0A955C9818F3FA9900553B23 /* sample.mov */,
 				0A6D6FAE18EF694E004975FD /* sample.mp4 */,
 			);
 			path = Videos;
@@ -502,6 +505,7 @@
 				0A6D6FA618EF61A6004975FD /* avenir.ttf in Resources */,
 				0A6D6F9E18EF551A004975FD /* back_arrow.png in Resources */,
 				0A6D6FAA18EF61AF004975FD /* circle@2x.png in Resources */,
+				0A955C9918F3FA9900553B23 /* sample.mov in Resources */,
 				0A6D6F8718EF4A1A004975FD /* workout_2.png in Resources */,
 				0A6D6F8918EF4A1A004975FD /* workout_3.png in Resources */,
 				0A6D6F6C18EF44D1004975FD /* YMLWorkoutCell.xib in Resources */,
@@ -656,11 +660,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dealclan LLC";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Naatamai/Naatamai-Prefix.pch";
 				INFOPLIST_FILE = "Naatamai/Naatamai-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0F4F9A97-40A1-442D-9B7A-B577DDFCA848";
+				PROVISIONING_PROFILE = "4D1494DB-77AC-477F-9B9C-6622B8AA07E3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -670,11 +675,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dealclan LLC";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Naatamai/Naatamai-Prefix.pch";
 				INFOPLIST_FILE = "Naatamai/Naatamai-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0F4F9A97-40A1-442D-9B7A-B577DDFCA848";
+				PROVISIONING_PROFILE = "4D1494DB-77AC-477F-9B9C-6622B8AA07E3";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

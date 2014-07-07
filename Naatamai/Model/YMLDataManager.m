@@ -44,7 +44,7 @@
                 sucess(responseDict);
             }
             else{
-                
+                failure([NSError errorWithDomain:@"" code:11 userInfo:nil]);
             }
             
         });

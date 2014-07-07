@@ -79,7 +79,7 @@
 }
 
 - (IBAction)playVideoTapped:(id)sender {
-    NSURL *movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"sample" ofType:@"mp4"]];
+    NSURL *movieURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"sample" ofType:@"mov"]];
     MPMoviePlayerViewController *movieController = [[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
     [self presentMoviePlayerViewControllerAnimated:movieController];
     [movieController.moviePlayer play];
